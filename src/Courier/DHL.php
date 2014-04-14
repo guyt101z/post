@@ -11,6 +11,12 @@ class DHL extends BasePos {
 		elseif ($weight <= 2000)
 			return 160;
 		elseif ($weight <= 5000)
-			return 180;					
+			return 180;
+		elseif ($weight <= 10000)
+			return 190;	
+		elseif ($weight <= 15000)
+			return 220;
+		elseif ($weight <= 20000)
+			return 245;						
 	}
 }
